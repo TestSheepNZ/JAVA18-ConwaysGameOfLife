@@ -13,7 +13,7 @@
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-public class conwayCell {
+public class ConwayCell {
 
 	//Attributes
 	private boolean isAlive;
@@ -78,7 +78,7 @@ public class conwayCell {
 	@Test
 	public void aliveOneNeighbour()
 	{
-		conwayCell cell = new conwayCell();
+		ConwayCell cell = new ConwayCell();
 		cell.setIsAlive(true);
 		cell.setNumLiveNeighbours(1);
 		assertTrue("Cell should be alive", cell.getIsAlive());
@@ -91,7 +91,7 @@ public class conwayCell {
 	@Test
 	public void aliveThreeNeighbours()
 	{
-		conwayCell cell = new conwayCell();
+		ConwayCell cell = new ConwayCell();
 		cell.setIsAlive(true);
 		cell.setNumLiveNeighbours(3);
 		assertTrue("Cell should be alive", cell.getIsAlive());
@@ -104,7 +104,7 @@ public class conwayCell {
 	@Test
 	public void deadThreeNeighbours()
 	{
-		conwayCell cell = new conwayCell();
+		ConwayCell cell = new ConwayCell();
 		cell.setIsAlive(false);
 		cell.setNumLiveNeighbours(3);
 		assertFalse("Cell should be dead", cell.getIsAlive());
